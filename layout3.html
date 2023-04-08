@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        padding: 0 20px;
+      }
+      .container .header,
+      .container .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        border: 1px solid#000;
+        margin-top: 20px;
+      }
+      .content-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        
+      }
+      .content-wrap .content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 50%;
+        height: 200px;
+        
+      }
+      .content-wrap .content-area .box {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        border: 1px solid#000;
+      }
+      .content-wrap .content-area .box + .box {
+        margin-top: 20px;
+      }
+      .content-wrap .aside {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        width: 50%;
+        height: 200px;
+        border: 1px solid#000;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 50px;
+        border: 1px solid#000;
+        
+        
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="nav">nav</div>
+    
+    <div class="content-wrap">
+      <div class="content-area">
+        <div class="box">section</div>
+        <div class="box">article</div>
+      </div>
+      <div class="aside">aside</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+  </body>
+</html>

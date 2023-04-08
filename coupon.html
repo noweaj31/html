@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        height: 200px;
+        border: 1px solid #00f;
+        background-color: white;
+      }
+      .container .box1 {
+        font-size: medium;
+        font-weight: bolder;
+
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .container .box2 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+      }
+      .container .box2 .box2-1 {
+        width: 50%;
+        font-size: 2pc;
+        font-weight: bolder;
+        color: dodgerblue;
+      }
+      .container .box2 .box2-2 {
+        text-align: center;
+        line-height: 30px;
+        margin-left: 20px;
+        width: 70px;
+        height: 30px;
+        border: 1px solid#d3d3d3;
+        border-radius: 5px;
+      }
+      .container .box2 .box2-3 {
+        margin-left: 10px;
+        text-align: center;
+        color: aliceblue;
+        line-height: 30px;
+        width: 70px;
+        height: 30px;
+        background-color: black;
+        border: 1px solid#000;
+        border-radius: 5px;
+      }
+      .coupon-list {
+        display: flex;
+        
+      }
+      .coupon-list .coupon {
+        margin: 10px;
+      }
+      .coupon {
+        padding: 10px 20px 10px;
+        border: 1px solid blue;
+        width: 400px;
+        height: 150px;
+      }
+      .coupon .coupon-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .coupon .coupon-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .coupon .coupon-info p {
+        font-size: 30px;
+        color: #00f;
+        }
+      span:nth-child(2) {
+        color: red;
+      }
+
+      .coupon .coupon-info a {
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid gray;
+        text-decoration: none;
+        color: black;
+        border-radius: 5px;
+      }
+      .coupon .coupon-info a:hover {
+        background-color: #000;
+        color: white;
+      }
+      .coupon .coupon-info button {
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid#000;
+        color: white;
+        background-color: #000;
+        border-radius: 5px;
+      }
+      .coupon-list .coupon:nth-child(3) .coupon-info .btn-area a {
+        color: red;
+      }
+    </style>
+    <title>coupon</title>
+  </head>
+  <body>
+    <div class="coupon-list">
+      <div class="coupon">
+        <h4 class="coupon-title">뉴발란스 특별 쿠폰</h4>
+        <div class="coupon-info">
+          <p class="discount"><span>50</span>%</p>
+          <div class="btn-area">
+            <a
+              href="https://www.musinsa.com/app/contents/coupon_products/?coupon_no=70240"
+              target="_blank"
+              class="applied-product"
+              >적용상품</a
+            >
+            <button class="coupon-download">쿠폰받기</button>
+          </div>
+        </div>
+      </div>
+      <div class="coupon">
+        <h4 class="coupon-title">뉴발란스 특별 쿠폰</h4>
+        <div class="coupon-info">
+          <p class="discount"><span>50</span>%</p>
+          <div class="btn-area">
+            <a
+              href="https://www.musinsa.com/app/contents/coupon_products/?coupon_no=70240"
+              target="_blank"
+              class="applied-product"
+              >적용상품</a
+            >
+            <button class="coupon-download">쿠폰받기</button>
+          </div>
+        </div>
+      </div>
+      <div class="coupon">
+        <h4 class="coupon-title">뉴발란스 특별 쿠폰</h4>
+        <div class="coupon-info">
+          <p class="discount"><span>50</span>%</p>
+          <div class="btn-area">
+            <a
+              href="https://www.musinsa.com/app/contents/coupon_products/?coupon_no=70240"
+              target="_blank"
+              class="applied-product"
+              >적용상품</a
+            >
+            <button class="coupon-download">쿠폰받기</button>
+          </div>
+        </div>
+      </div>
+      <div class="coupon">
+        <h4 class="coupon-title">뉴발란스 특별 쿠폰</h4>
+        <div class="coupon-info">
+          <p class="discount"><span>50</span>%</p>
+          <div class="btn-area">
+            <a
+              href="https://www.musinsa.com/app/contents/coupon_products/?coupon_no=70240"
+              target="_blank"
+              class="applied-product"
+              >적용상품</a
+            >
+            <button class="coupon-download">쿠폰받기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

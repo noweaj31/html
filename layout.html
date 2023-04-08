@@ -5,38 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      div {
-      border: 1px solid #fff;
-      box-sizing: border-box;
-    }
-      .container{
-        width: 100%;
-        height: 100vh;
-        background-color: red;
-
+      .container .item {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
       }
 
       #title {
-        font-size: 40px;
-        font-weight: normal;
-        color: #fff;
+        color: red;
+        text-align: center;
       }
 
-      .area{
-        padding: 20px 10px;
+      div:nth-child(3) {
+        background-color: red;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .item + .item {
+        margin-left: 20px;
+      }
+
+      .container .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .wrap .area {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrap .area.area_3 {
+        background-color: red;
+      }
+
+      .wrap .area + .area {
+        margin-left: 20px;
       }
     </style>
-
-  
-    <title>레이아웃</title>
   </head>
   <body>
+    <div id="title">레이아웃 학습</div>
     <div class="container">
-      <h1 id="title">레이아웃 학습</h1>
-      <div class="area">영역1</div>
-      <div class="area">영역2</div>
-      <div class="area">영역3</div>
-      <div class="area">영역4</div>
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+      <div class="item item4">item4</div>
+    </div>
+    <div>
+      <div class="item">
+        <div class="item1"></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="area">area1</div>
+      <div class="area">area2</div>
+      <div class="area area_3">area3</div>
+      <div class="area">area4</div>
+    </div>
+
+    <div class="card_list">
+      <div class="card_item">
+        <div class="img_area"></div>
+        <div class="text_area"></div>
+      </div>
+    </div>
+
+    
+    
+    <div>
+      <div></div>
+    </div>
+
+    <div>
+      <div></div>
     </div>
   </body>
 </html>
